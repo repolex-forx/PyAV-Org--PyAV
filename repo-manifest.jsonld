@@ -285,8 +285,9 @@
     {
       "@id": "https://repolex.ai/r/PyAV-Org/PyAV/commit/1f2b3ad8268b2bbf116567e2f60ac3570d041d92",
       "git:hexsha": "1f2b3ad8268b2bbf116567e2f60ac3570d041d92",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v17.0.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v17.0.0",
+      "repolex:parsedAt": "2026-04-09T17:39:28.636777+00:00"
     },
     {
       "@id": "https://repolex.ai/r/PyAV-Org/PyAV/commit/9c87fd9737bc46faf10d52a0a78b6fec0376073d",
