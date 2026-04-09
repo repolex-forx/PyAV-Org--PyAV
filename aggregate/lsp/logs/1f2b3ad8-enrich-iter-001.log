@@ -1,0 +1,40 @@
+[2026-04-09T17:57:21Z] === ENRICH ITERATION 1 START | repo=PyAV-Org/PyAV sha=1f2b3ad8 ===
+[2026-04-09T17:57:21Z] [iter=1] PHASE START: enrich repo=PyAV-Org/PyAV sha=1f2b3ad8 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1f2b3ad8-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1f2b3ad8268b2bbf116567e2f60ac3570d041d92.nq.gz
+[2026-04-09T17:57:21Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-09T17:57:27Z] [iter=1] AST store loaded triples=916604 load_secs=6 mem_mb=779 MB
+[2026-04-09T17:57:27Z] [iter=1] Step 2: Finding LSP targets mem_mb=779 MB
+[2026-04-09T17:57:29Z] [iter=1] LSP targets found call_sites=5515 imports=656 extends=189 implements=0 secs=2
+[2026-04-09T17:57:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=779 MB
+[2026-04-09T17:57:36Z] [iter=1] Position index built positions=62455 nodes_with_types=78581 secs=5 mem_mb=779 MB
+[2026-04-09T17:57:36Z] [iter=1] Step 3: Starting LSP resolution mem_mb=779 MB already_completed_types=[] already_completed_files=0
+[2026-04-09T17:57:36Z] [iter=1] Resolving target type target_type=call_site count=5515
+[2026-04-09T17:57:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.5 files_done=3 resolved=6 errors=42 current=av/filter/graph.py
+[2026-04-09T17:58:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=7 resolved=66 errors=119 current=tests/test_codec.py
+[2026-04-09T17:59:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.2 files_done=9 resolved=192 errors=285 current=av/sidedata/encparams.py
+[2026-04-09T18:00:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.9 files_done=12 resolved=228 errors=387 current=av/codec/context.pyi
+[2026-04-09T18:00:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=14 resolved=338 errors=494 current=examples/basics/record_facecam.py
+[2026-04-09T18:01:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.2 files_done=19 resolved=466 errors=595 current=tests/test_videoframe.py
+[2026-04-09T18:04:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=20 resolved=621 errors=1022 current=av/container/streams.py
+[2026-04-09T18:05:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.9 files_done=25 resolved=724 errors=1168 current=av/container/output.py
+[2026-04-09T18:05:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.4 files_done=28 resolved=785 errors=1246 current=tests/test_packet.py
+[2026-04-09T18:06:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.9 files_done=31 resolved=851 errors=1328 current=av/video/codeccontext.py
+[2026-04-09T18:06:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=33 resolved=897 errors=1439 current=tests/test_codec_context.py
+[2026-04-09T18:07:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=34 resolved=924 errors=1563 current=examples/audio/atempo.py
+[2026-04-09T18:08:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.2 files_done=37 resolved=960 errors=1690 current=av/codec/hwaccel.pyi
+[2026-04-09T18:09:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.7 files_done=44 resolved=1081 errors=1766 current=av/logging.py
+[2026-04-09T18:09:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=49 resolved=1170 errors=1846 current=tests/test_remux.py
+[2026-04-09T18:10:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=54 resolved=1208 errors=1935 current=tests/test_colorspace.py
+[2026-04-09T18:10:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.3 files_done=62 resolved=1393 errors=2014 current=av/bitstream.py
+[2026-04-09T18:11:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.8 files_done=65 resolved=1423 errors=2093 current=tests/test_chapters.py
+[2026-04-09T18:11:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.4 files_done=72 resolved=1540 errors=2176 current=av/audio/format.py
+[2026-04-09T18:12:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.9 files_done=80 resolved=1627 errors=2255 current=av/option.pyi
+[2026-04-09T18:12:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.4 files_done=96 resolved=1764 errors=2335 current=tests/test_open.py
+[2026-04-09T18:13:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=108 resolved=1840 errors=2416 current=av/packet.pyi
+[2026-04-09T18:13:22Z] [iter=1] Target type resolved target_type=call_site resolved=1862 errors=2429 secs=946 mem_mb=779 MB
+[2026-04-09T18:13:22Z] [iter=1] Resolving target type target_type=import_statement count=656
+[2026-04-09T18:13:26Z] [iter=1] Target type resolved target_type=import_statement resolved=401 errors=0 secs=5 mem_mb=779 MB
+[2026-04-09T18:13:26Z] [iter=1] Resolving target type target_type=extends_clause count=189
+[2026-04-09T18:13:29Z] [iter=1] Target type resolved target_type=extends_clause resolved=169 errors=0 secs=3 mem_mb=779 MB
+[2026-04-09T18:13:34Z] [iter=1] Step 5: Writing final enrichment file triples=56727
+[2026-04-09T18:13:35Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/1f2b3ad8268b2bbf116567e2f60ac3570d041d92.nq.gz size_kb=1166
+[2026-04-09T18:13:35Z] [iter=1] PHASE END: enrich elapsed_s=975 elapsed_min=16.2 total_triples=56727
