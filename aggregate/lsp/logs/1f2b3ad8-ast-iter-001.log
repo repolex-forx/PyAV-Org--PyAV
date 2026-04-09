@@ -1,0 +1,7 @@
+[2026-04-09T17:47:22Z] === AST ITERATION 1 START | repo=PyAV-Org/PyAV sha=1f2b3ad8 ===
+[2026-04-09T17:47:22Z] [iter=1] PHASE START: ast repo=PyAV-Org/PyAV sha=1f2b3ad8
+[2026-04-09T17:47:22Z] [iter=1] Building AST aggregate chunks
+[2026-04-09T17:48:35Z] [iter=1] AST chunks built count=1 triples=916606
+[2026-04-09T17:48:35Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/1f2b3ad8268b2bbf116567e2f60ac3570d041d92/.complete
+[2026-04-09T17:48:35Z] [iter=1] PHASE END: ast elapsed_s=73 elapsed_min=1.2
+[2026-04-09T17:48:35Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
