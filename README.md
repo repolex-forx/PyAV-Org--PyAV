@@ -6,29 +6,27 @@ RDF knowledge graph data for [PyAV-Org/PyAV](https://github.com/PyAV-Org/PyAV), 
 
 ## How to use this data
 
-The easiest way to get started is to install the [lexq](https://github.com/repolex-ai/lexq) query tool using [uv](https://docs.astral.sh/uv/getting-started/installation/).
-
-If you have uv installed, just copy/paste this into your terminal:
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
 
 ```bash
-uv tool install git+https://github.com/repolex-ai/lexq
+cargo install --git https://github.com/repolex-ai/rlex
 ```
 
-This installs lexq onto your system, in your user context. Verify the install:
+Verify the install:
 
 ```bash
-lexq --help
+rlex --help
 ```
 
-**lexq is designed to be used primarily by LLMs in a terminal.** Start up your favorite LLM and ask it to use the lexq tool. It's that easy!
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
 
 To load this repo's data:
 
 ```bash
-lexq download PyAV-Org/PyAV
+rlex download PyAV-Org/PyAV
 ```
 
-This will automatically download essential data files from the last parsed commit. Consult `lexq --moreinfo` for other options, including downloading multiple commits, blobs, etc.
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
 
 ## Data structure
 
@@ -38,12 +36,17 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 .
 ├── aggregate
 │   ├── ast
-│   │   └── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92
+│   │   ├── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92
+│   │   │   └── chunk-001.nq.gz
+│   │   └── 4cf095390d5537f49abe83dcf97f4f8525ecbf1a
 │   │       └── chunk-001.nq.gz
 │   ├── lsp
-│   │   └── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92.nq.gz
+│   │   ├── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92.nq.gz
+│   │   └── 4cf095390d5537f49abe83dcf97f4f8525ecbf1a.nq.gz
 │   └── repolex
-│       └── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92
+│       ├── 1f2b3ad8268b2bbf116567e2f60ac3570d041d92
+│       │   └── chunk-001.nq.gz
+│       └── 4cf095390d5537f49abe83dcf97f4f8525ecbf1a
 │           └── chunk-001.nq.gz
 └── blob
     ├── 0045b5c858c247b1f244092e36dff0866623a5d7.nq.gz
@@ -239,12 +242,9 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
     ├── 699838c38f8db99e66aed2ef2b0df40983d4a0e0.nq.gz
     ├── 69b356cb595153f7f19a49b3b31691a7d2b39a5b.nq.gz
     ├── 6a20af14f7cd37ba7f2dcf51784472a6903c7e49.nq.gz
-    ├── 6a3add3e1a4d86a619a80e34ca9a9f0dae1f1ab1.nq.gz
-    ├── 6a68de73b18b9d4e9d3890b3ae64aa6fbb72aebd.nq.gz
-    ├── 6ad38df5b20593cba9e59047bd9ef33249560934.nq.gz
-    └── 6aeb86b4d27487dd44b6a8bd91f9998462c56af9.nq.gz
+    └── 6a3add3e1a4d86a619a80e34ca9a9f0dae1f1ab1.nq.gz
 
-8 directories, 200 files
+10 directories, 200 files
 ```
 
 | Directory | What it contains |
@@ -258,10 +258,11 @@ All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) 
 | `branch/` | Branch metadata. |
 | `tag/` | Tag metadata. |
 | `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
 
 ## Source repository
 
 [PyAV-Org/PyAV](https://github.com/PyAV-Org/PyAV)
 
 ---
-*Parsed on 2026-04-09 by [repolex](https://repolex.ai)*
+*Parsed on 2026-09-27 by [repolex](https://repolex.ai)*
