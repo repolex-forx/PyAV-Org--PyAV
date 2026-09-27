@@ -260,6 +260,33 @@
       ],
       "ast": [
         "aggregate/ast/4cf095390d5537f49abe83dcf97f4f8525ecbf1a/chunk-001.nq.gz"
+      ],
+      "lsp": "aggregate/lsp/4cf095390d5537f49abe83dcf97f4f8525ecbf1a.nq.gz",
+      "dependencies": [
+        {
+          "packageName": "numpy",
+          "ecosystem": "PYPI",
+          "version": "2.5.3",
+          "githubOrg": "numpy",
+          "githubRepo": "numpy",
+          "githubCommit": "dd88c0c19b54ad9ed3533224221285bf0873249a",
+          "githubTag": "v2.5.3",
+          "githubUrl": "https://github.com/numpy/numpy",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/numpy/__init__.py"
+        },
+        {
+          "packageName": "setuptools",
+          "ecosystem": "PYPI",
+          "version": "84.0.0",
+          "githubOrg": "pypa",
+          "githubRepo": "setuptools",
+          "githubCommit": "72e919a8b10aaafc041205d4e3ae0e6a2e1e5f87",
+          "githubTag": "v84.0.0",
+          "githubUrl": "https://github.com/pypa/setuptools",
+          "source": "lsp",
+          "install_path": "/home/runner/.local/share/uv/tools/repolex/lib/python3.14/site-packages/setuptools/__init__.py"
+        }
       ]
     },
     {
